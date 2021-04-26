@@ -1,0 +1,25 @@
+[gd_resource type="ShaderMaterial" load_steps=4 format=2]
+
+[ext_resource path="res://shaders/Backgrounds.shader" type="Shader" id=1]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.2, 0.3, 0.5, 0.5, 0.7, 0.8, 1 )
+colors = PoolColorArray( 0, 0.352941, 0.294118, 1, 0, 0.466667, 0.388235, 1, 0, 0.494118, 0.411765, 1, 0, 0.521569, 0.435294, 1, 0, 0.380392, 0.317647, 1, 0, 0.407843, 0.341176, 1, 0, 0.435294, 0.364706, 1, 0, 0.54902, 0.458824, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[resource]
+shader = ExtResource( 1 )
+shader_param/screen_height = 640.0
+shader_param/amplitude = 0.0
+shader_param/frequency = 0.0
+shader_param/speed = 0.0
+shader_param/amplitude_vertical = 0.0
+shader_param/frequency_vertical = 0.0
+shader_param/speed_vertical = 0.0
+shader_param/scroll_direction = Vector2( 0, 0 )
+shader_param/scrolling_speed = 0.0
+shader_param/enable_palette_cycling = true
+shader_param/palette_speed = 0.2
+shader_param/palette = SubResource( 2 )

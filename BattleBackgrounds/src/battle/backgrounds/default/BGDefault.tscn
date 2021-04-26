@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/battle/backgrounds/default/BGDefaultFG2.tres" type="Material" id=1]
+[ext_resource path="res://src/battle/backgrounds/default/BGDefaultFG1.tres" type="Material" id=2]
+[ext_resource path="res://src/battle/backgrounds/default/FG.gd" type="Script" id=4]
+
+[node name="BGDefault" type="CanvasLayer"]
+
+[node name="BG" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FG1" type="TextureRect" parent="."]
+material = ExtResource( 2 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FG2" type="TextureRect" parent="."]
+material = ExtResource( 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+expand = true
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
