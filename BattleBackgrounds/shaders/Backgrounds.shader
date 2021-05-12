@@ -24,7 +24,7 @@ uniform float palette_speed = 0.1;
 void fragment()
 {
 	float diff_x = amplitude * sin((frequency * UV.y) + (speed * TIME));
-	float diff_y = amplitude_vertical * sin(UV.y * frequency_vertical + TIME * speed_vertical);
+	float diff_y = amplitude_vertical * sin((frequency_vertical * UV.y)  + (speed_vertical * TIME));
 	vec2 scroll = scroll_direction * TIME * scrolling_speed;
 	vec4 tex = texture(TEXTURE, vec2(UV.x + diff_x, UV.y + diff_y) + scroll);
 	float palette_swap = mod(tex.r - TIME * palette_speed, 1.0);
