@@ -21,5 +21,6 @@ shader_param/speed_vertical = 2.0
 shader_param/scroll_direction = Vector2( 0, 0 )
 shader_param/scrolling_speed = 0.08
 shader_param/enable_palette_cycling = true
+shader_param/enable_scan_lines = true
 shader_param/palette_speed = 0.1
 shader_param/palette = SubResource( 2 )
